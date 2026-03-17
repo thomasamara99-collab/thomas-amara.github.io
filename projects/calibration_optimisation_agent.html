@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AI Calibration Optimisation Agent • Thomas Amara</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<nav class="top-nav">
+  <a class="brand" href="../index.html">Thomas Amara</a>
+  <ul>
+    <li><a href="../projects.html">Projects</a></li>
+    <li><a href="../research.html">Research</a></li>
+    <li><a href="../investing.html">Investing</a></li>
+    <li><a href="../interests.html">Interests</a></li>
+  </ul>
+</nav>
+
+<main class="page">
+
+<h1>AI Calibration Optimisation Agent</h1>
+
+<h2>Overview</h2>
+
+<p>
+Industrial equipment often follows fixed calibration schedules that are not
+optimised for the true reliability profile of the system. This project explores
+how statistical reliability models can be used to dynamically estimate optimal
+calibration intervals, improving operational efficiency while maintaining
+high reliability standards.
+</p>
+
+<h2>The Problem</h2>
+
+<p>
+Many calibration schedules are based on conservative heuristics rather than
+data-driven reliability analysis. This can lead to:
+</p>
+
+<ul>
+<li>Unnecessary calibration costs</li>
+<li>Operational downtime</li>
+<li>Inefficient maintenance schedules</li>
+</ul>
+
+<p>
+The goal of this project is to determine calibration intervals that balance
+cost efficiency with reliability targets.
+</p>
+
+<h2>Methodology</h2>
+
+<p>
+The system models equipment reliability using tools such as Weibull reliability analysis.
+Key parameters such as the shape parameter (β) and scale parameter (η)
+are estimated from failure data to generate reliability curves over time.
+</p>
+
+<ul>
+<li>Weibull distribution modelling</li>
+<li>Reliability curve estimation</li>
+<li>Mean Time Between Failures (MTBF)</li>
+<li>Optimisation of calibration intervals under reliability constraints</li>
+</ul>
+
+<div class="project-image">
+  <img src="../images/Optimising-Agent1.png" alt="Calibration intervals are often suboptimal - leading to useless spending and suboptimal rates">
+</div>
+
+<h2>Results</h2>
+
+<p>
+The model produces a reliability curve that estimates the probability of
+successful operation over time and identifies the optimal calibration
+interval required to maintain a 95% reliability target.
+</p>
+
+<div class="project-image">
+  <img src="../images/Optimising-Agent2.png" alt="Reliability analysis chart showing probability of success over time">
+</div>
+
+<h2>Key Metrics</h2>
+
+<ul>
+<li>Optimal calibration interval: ~76 units of operational time</li>
+<li>Mean Time Between Failures (MTBF): ~204 units</li>
+<li>Shape parameter (β): 2.70</li>
+<li>Scale parameter (η): 230</li>
+</ul>
+
+<p>
+  The tool analyses user input and determines the appropriate tools to use to accomplish the user's goal.
+Then, it writes the appropriate python code based on the user input, analyses the output of the code, 
+and delivers appropriate recommendations.
+  </p>
+
+<h2>Potential Applications</h2>
+
+<p>
+This approach could be integrated into predictive maintenance systems
+to dynamically optimise maintenance schedules in industries such as
+healthcare technology, manufacturing, and industrial instrumentation.
+</p>
+
+<p>
+This project was inspired by my internship at GE Healthcare, where I observed 
+data and processes first-hand, confirming the potential of the solution. I have since 
+then completed IBM's Build an AI Agent online course and plan to further refine
+the project.
+</p>
+</main>
+
+</body>
+
+</html>

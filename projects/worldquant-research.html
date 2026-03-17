@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WorldQuant Research - Thomas Amara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../scripts.js" defer></script>
+  </head>
+
+  <body>
+    <div class="background-glow" aria-hidden="true"></div>
+
+    <nav class="top-nav" data-reveal>
+      <a class="brand" href="../index.html">Thomas Amara</a>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects</a></li>
+        <li><a href="../research.html">Research</a></li>
+        <li><a href="../investing.html">Investing</a></li>
+        <li><a href="../interests.html">Interests</a></li>
+      </ul>
+    </nav>
+
+    <main class="page">
+      <header class="page-hero" data-reveal>
+        <p class="eyebrow">WorldQuant</p>
+        <h1>Research Consultant</h1>
+        <p class="lead">
+          Conducted quantitative research on systematic equity strategies, designing and testing predictive signals
+          across global markets with a focus on the US and China universes.
+        </p>
+        <div class="hero-badges" data-reveal data-reveal-delay="120">
+          <span class="badge">US and China Markets</span>
+          <span class="badge">Systematic Equity Signals</span>
+          <span class="badge">2+ Sharpe Alphas</span>
+        </div>
+      </header>
+
+      <section class="grid-two" data-reveal data-reveal-delay="180">
+        <div class="card spotlight">
+          <h2>Research Focus</h2>
+          <p>
+            Integrated fundamental accounting ratios, return momentum, volatility filters, and z-score logic to
+            identify short-term mispricings in liquid equities.
+          </p>
+        </div>
+        <div class="card spotlight">
+          <h2>Method</h2>
+          <p>
+            Refined strategies through iterative experimentation, empirical validation, and robustness checks,
+            consistently producing alphas with Sharpe ratios above 2.
+          </p>
+        </div>
+      </section>
+
+      <section class="section-block" data-reveal>
+        <div class="section-header">
+          <h2>Alpha Spotlight</h2>
+          <p>
+            Fundamental Anchoring in Microstructure Noise. A signal that combines intraday dislocations with
+            persistent profitability to capture liquidity-driven mean reversion.
+          </p>
+        </div>
+        <div class="grid-two">
+          <article class="card spotlight">
+            <div class="card-top">
+              <div>
+                <h3>Performance Snapshot</h3>
+                <p class="muted">Backtest highlights from the research note.</p>
+              </div>
+              <a class="button" href="alpha_fundamental_anchoring_in_microstructure_noise.pdf">View Note</a>
+            </div>
+            <div class="metric-grid">
+              <div class="metric">
+                <span class="metric-label">Sharpe</span>
+                <span class="metric-value">2.03</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Fitness</span>
+                <span class="metric-value">1.40</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">Avg Annual Return</span>
+                <span class="metric-value">16.24%</span>
+              </div>
+            </div>
+            <ul class="insight-list">
+              <li>Strong performance in volatile, dislocated regimes; more fragile in momentum-driven markets.</li>
+              <li>Targets microstructure mean reversion while filtering for profitability persistence.</li>
+              <li>Validated using Monte Carlo style robustness checks and empirical stress scenarios.</li>
+            </ul>
+          </article>
+
+          <article class="card spotlight">
+            <h3>Signal Architecture</h3>
+            <ul class="insight-list">
+              <li><strong>Price dislocation:</strong> z-scored VWAP vs close to capture end-of-day mispricing.</li>
+              <li><strong>Volatility filter:</strong> compressed intraday ranges to identify post-stabilization reversals.</li>
+              <li><strong>Fundamental anchor:</strong> operating profitability rank to avoid structurally weak firms.</li>
+              <li><strong>Contrarian tilt:</strong> recent underperformers to capture short-term reversal premium.</li>
+            </ul>
+            <div class="code-block">
+              <code>alpha = zscore(VWAP / Close) * (1 - rank(High / Low)) * ts_rank(OperatingIncome, 252) * rank(-Returns)</code>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-block" data-reveal>
+        <div class="callout">
+          <div>
+            <h2>Origin Story</h2>
+            <p>
+              Inspired by reading <em>The Man Who Solved the Market</em> about Jim Simons, I discovered my love of
+              coding through alpha research. That curiosity led me to learn Python and begin building systematic
+              research projects from scratch.
+            </p>
+          </div>
+          <div class="callout-meta">
+            <div class="metric">
+              <span class="metric-label">Core Tools</span>
+              <span class="metric-value">Python, factor research</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Focus</span>
+              <span class="metric-value">Systematic equity signals</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Markets</span>
+              <span class="metric-value">US and China</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
