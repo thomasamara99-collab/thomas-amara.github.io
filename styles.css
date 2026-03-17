@@ -309,6 +309,19 @@ p {
   margin-top: 1.6rem;
 }
 
+.logo-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  opacity: 0.95;
+  filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.45));
+}
+
 .badge {
   padding: 0.45rem 0.9rem;
   border-radius: 999px;
@@ -446,6 +459,76 @@ p {
   font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.03em;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.stat-card {
+  padding: 1.4rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(12, 18, 26, 0.75);
+  box-shadow: var(--shadow);
+}
+
+.stat-label {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.stat-value {
+  display: block;
+  margin-top: 0.7rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.barbell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.barbell-card {
+  padding: 1.6rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(12, 18, 26, 0.75);
+  box-shadow: var(--shadow);
+}
+
+.barbell-divider {
+  width: 2px;
+  background: linear-gradient(180deg, rgba(99, 228, 212, 0) 0%, rgba(99, 228, 212, 0.6) 50%, rgba(99, 228, 212, 0) 100%);
+  border-radius: 999px;
+}
+
+.section-note {
+  margin-top: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.case-grid,
+.conviction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
 }
 
 .button {
@@ -600,6 +683,18 @@ p {
   .callout {
     grid-template-columns: 1fr;
   }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .barbell {
+    grid-template-columns: 1fr;
+  }
+
+  .barbell-divider {
+    display: none;
+  }
 }
 
 @media (max-width: 760px) {
@@ -639,6 +734,10 @@ p {
 
   .metric-grid .metric:nth-child(3) {
     grid-column: auto;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
   }
 }
 
