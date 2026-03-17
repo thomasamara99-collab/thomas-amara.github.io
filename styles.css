@@ -1,0 +1,245 @@
+:root {
+  --bg: #090b10;
+  --surface: rgba(20, 24, 34, 0.72);
+  --surface-border: rgba(255, 255, 255, 0.12);
+  --text-primary: #ecf0ff;
+  --text-secondary: #b4bdd3;
+  --accent: #90b4ff;
+  --accent-glow: rgba(144, 180, 255, 0.38);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text-primary);
+  background: radial-gradient(circle at 15% 20%, #171c29 0%, transparent 40%),
+    radial-gradient(circle at 80% 0%, #11172a 0%, transparent 32%),
+    linear-gradient(160deg, #06070b 0%, #090b10 45%, #07090f 100%);
+}
+
+.background-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 70% 15%, var(--accent-glow) 0%, transparent 45%);
+  filter: blur(72px);
+  opacity: 0.55;
+}
+
+.hero,
+main {
+  width: min(1000px, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.hero {
+  padding-top: 1.4rem;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  padding: 0.85rem 1rem;
+  position: sticky;
+  top: 1rem;
+  z-index: 5;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 13, 20, 0.66);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.brand {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.top-nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.94rem;
+  transition: color 160ms ease;
+}
+
+.top-nav a:hover,
+.top-nav a:focus-visible {
+  color: var(--accent);
+}
+
+.hero-content {
+  margin: 6rem auto 5.2rem;
+  max-width: 760px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.hero-content p {
+  color: var(--text-secondary);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.75;
+  margin-top: 1.4rem;
+}
+
+main {
+  padding-bottom: 4.8rem;
+  display: grid;
+  gap: 1.1rem;
+}
+
+.card {
+  padding: 1.6rem;
+  border-radius: 20px;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  letter-spacing: -0.015em;
+}
+
+.card p {
+  margin: 0.7rem 0 0;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .hero,
+  main {
+    width: min(1000px, calc(100% - 1.2rem));
+  }
+
+  .top-nav {
+    border-radius: 16px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .top-nav ul {
+    gap: 0.65rem;
+  }
+
+  .hero-content {
+    margin-top: 4rem;
+  }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+.section-intro {
+  margin-bottom: 3rem;
+  color: #aaa;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-card {
+  display: block;
+  background: rgba(255,255,255,0.05);
+  padding: 1.8rem;
+  border-radius: 12px;
+
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* removes blue link color */
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.6rem;
+}
+
+.project-card p {
+  color: #b9c0cc;
+}
+.project-intro {
+  font-size: 1.1rem;
+  color: #b9c0cc;
+  margin-bottom: 2rem;
+}
+
+.project-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+}
