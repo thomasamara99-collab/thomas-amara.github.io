@@ -246,6 +246,35 @@ p {
   background: var(--surface-strong);
 }
 
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-link:hover,
+.card-link:focus-visible {
+  color: inherit;
+}
+
+.project-image {
+  margin: 2.2rem 0;
+  text-align: center;
+}
+
+.project-image img {
+  display: block;
+  margin: 0 auto;
+  width: min(720px, 100%);
+  height: auto;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.project-image--compact img {
+  width: min(560px, 100%);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
