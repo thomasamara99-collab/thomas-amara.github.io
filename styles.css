@@ -439,6 +439,15 @@ p {
   text-transform: uppercase;
 }
 
+.card-cta {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
