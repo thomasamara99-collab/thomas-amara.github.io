@@ -470,9 +470,15 @@ p {
 }
 
 .meta-lines .meta-label {
+  display: inline-block;
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.meta-lines .meta-label::after {
+  content: ":";
+  margin-right: 0.35rem;
 }
 
 .metric-grid {
