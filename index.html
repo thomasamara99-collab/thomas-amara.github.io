@@ -1,26 +1,82 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Finance - Research - Ideas</title>
+    <title>Thomas Amara — Finance, Research &amp; Ideas</title>
+    <meta
+      name="description"
+      content="Thomas Amara — Business Management student at the University of Southampton (graduating 2027), Summer Associate at the Financial Conduct Authority, and founder of Basis. Projects, research and ideas at the intersection of finance and innovation."
+    />
+    <meta name="author" content="Thomas Amara" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://thomas-amara.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Thomas Amara" />
+    <meta property="og:title" content="Thomas Amara — Finance, Research &amp; Ideas" />
+    <meta
+      property="og:description"
+      content="Business Management student at the University of Southampton, Summer Associate at the Financial Conduct Authority, and founder of Basis. Finance, research and ideas."
+    />
+    <meta property="og:url" content="https://thomas-amara.com/" />
+    <meta property="og:image" content="https://thomas-amara.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Thomas Amara — Finance, Research &amp; Ideas" />
+    <meta
+      name="twitter:description"
+      content="Business Management student at the University of Southampton, Summer Associate at the Financial Conduct Authority, and founder of Basis."
+    />
+    <meta name="twitter:image" content="https://thomas-amara.com/og-image.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0b0b0b" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" defer></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Thomas Amara",
+        "url": "https://thomas-amara.com",
+        "jobTitle": ["Summer Associate", "Founder"],
+        "worksFor": [
+          { "@type": "Organization", "name": "Financial Conduct Authority" },
+          { "@type": "Organization", "name": "Basis", "url": "https://www.basisfinance.app" }
+        ],
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Southampton" },
+        "email": "mailto:ta2u24@soton.ac.uk",
+        "sameAs": [
+          "https://www.linkedin.com/in/thomas-amara/",
+          "https://www.basisfinance.app"
+        ],
+        "knowsAbout": ["Finance", "Quantitative Research", "Investing", "Macroeconomics"]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#home">Skip to content</a>
     <div class="background-glow" aria-hidden="true"></div>
 
     <header class="hero" id="home">
       <nav class="top-nav" data-reveal>
-        <a class="brand" href="#home">Thomas Amara</a>
+        <a class="brand" href="index.html">Thomas Amara</a>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="interests.html">Interests</a></li>
@@ -31,52 +87,89 @@
         <p class="eyebrow" data-reveal>Finance, Research and Ideas</p>
         <h1 data-reveal data-reveal-delay="90">Thomas Amara</h1>
         <p class="lead" data-reveal data-reveal-delay="160">
-          Welcome to my personal website. I am a second-year Business Management student at the University of
-          Southampton with a focus on how finance and innovation intersect. Driven by a proactive approach to
-          learning, I spend my time outside the classroom building technical skills and exploring market trends.
-          This website serves as a space to document my work, research, and ideas. It brings together the projects
-          I have built, the questions I explore through research, and the interests that shape the way I think about
-          finance, markets, and innovation.
+          I am a Business Management student at the University of Southampton, graduating in 2027, currently a
+          Summer Associate at the Financial Conduct Authority and the founder of
+          <a href="https://www.basisfinance.app/" target="_blank" rel="noopener">Basis</a> — a mobile app built to
+          make learning finance intuitive, engaging and accessible. I work at the intersection of finance and
+          innovation, and this site brings together the projects I have built, the questions I explore through
+          research, and the ideas that shape the way I think about markets.
         </p>
       </section>
     </header>
 
     <main class="content">
-      <div class="section-grid">
-        <a class="card spotlight card-link" href="projects.html" data-reveal>
-          <h2>Projects</h2>
-          <p>
-            A collection of analytical and entrepreneurial projects exploring finance and business strategy,
-            always blended with a bit of technology. Each project reflects an attempt to solve a problem,
-            learn a new skill, or build something new.
-          </p>
-        </a>
+      <section class="section-block" data-reveal>
+        <div class="section-header">
+          <h2>Currently</h2>
+          <p>What I am working on right now.</p>
+        </div>
+        <div class="now-grid">
+          <div class="now-card spotlight" data-reveal>
+            <span class="now-role">Summer Associate</span>
+            <span class="now-org">Financial Conduct Authority</span>
+            <p class="now-detail">
+              Supervision, Policy &amp; Competition (SPC) — Mainstream Consumer Credit Lenders. Based in London.
+            </p>
+            <span class="now-when">2026 — Present</span>
+          </div>
 
-        <a class="card spotlight card-link" href="research.html" data-reveal data-reveal-delay="80">
-          <h2>Research</h2>
-          <p>
-            Research exploring financial markets, macroeconomics, and quantitative analysis. This section includes
-            academic papers, research projects, and ongoing projects. The research I am most proud of is my US bond market
-            stress index using HMM and UMAP.
-          </p>
-        </a>
+          <a class="now-card spotlight card-link" href="https://www.basisfinance.app/" target="_blank" rel="noopener" data-reveal data-reveal-delay="80">
+            <span class="now-role">Founder</span>
+            <span class="now-org">Basis</span>
+            <p class="now-detail">
+              A mobile application built to make learning finance intuitive, engaging and accessible.
+            </p>
+            <span class="card-cta">Visit basisfinance.app →</span>
+            <span class="now-when">2026 — Present</span>
+          </a>
+        </div>
+      </section>
 
-        <a class="card spotlight card-link" href="projects/investing.html" data-reveal data-reveal-delay="160">
-          <h2>Investing</h2>
-          <p>
-            My investing philosophy, theses, and reflections. Focused on disciplined analysis, risk management,
-            and patient conviction over short-term noise.
-          </p>
-        </a>
+      <section class="section-block" data-reveal>
+        <div class="section-header">
+          <h2>Explore</h2>
+          <p>The work, research and interests that shape how I think.</p>
+        </div>
+        <div class="section-grid">
+          <a class="card spotlight card-link" href="projects.html" data-reveal>
+            <h2>Projects</h2>
+            <p>
+              A collection of analytical and entrepreneurial projects exploring finance and business strategy,
+              always blended with a bit of technology. Each project reflects an attempt to solve a problem,
+              learn a new skill, or build something new.
+            </p>
+            <span class="card-cta">View projects →</span>
+          </a>
 
-        <a class="card spotlight card-link" href="interests.html" data-reveal data-reveal-delay="240">
-          <h2>Hobbies, Interests and Passions</h2>
-          <p>
-            The interests that shape my thinking beyond academic and professional work. These include reading,
-            strength training, writing, and continuous learning.
-          </p>
-        </a>
-      </div>
+          <a class="card spotlight card-link" href="research.html" data-reveal data-reveal-delay="80">
+            <h2>Research</h2>
+            <p>
+              Research exploring financial markets, macroeconomics, and quantitative analysis. This section includes
+              academic papers, research projects, and ongoing work. The research I am most proud of is my US bond
+              market stress index using HMM and UMAP.
+            </p>
+            <span class="card-cta">Read research →</span>
+          </a>
+
+          <a class="card spotlight card-link" href="projects/investing.html" data-reveal data-reveal-delay="160">
+            <h2>Investing</h2>
+            <p>
+              My investing philosophy, theses, and reflections. Focused on disciplined analysis, risk management,
+              and patient conviction over short-term noise.
+            </p>
+            <span class="card-cta">See philosophy →</span>
+          </a>
+
+          <a class="card spotlight card-link" href="interests.html" data-reveal data-reveal-delay="240">
+            <h2>Hobbies, Interests and Passions</h2>
+            <p>
+              The interests that shape my thinking beyond academic and professional work. These include reading,
+              strength training, writing, and continuous learning.
+            </p>
+            <span class="card-cta">Explore interests →</span>
+          </a>
+        </div>
+      </section>
 
       <section class="section-block" data-reveal>
         <div class="callout">
@@ -84,8 +177,8 @@
             <h2>Get in touch</h2>
             <p>
               My long-term goal is to build a career in finance across investment banking, private equity,
-              or hedge funds. I aim to specialize at the intersection of
-              finance and innovation, while maintaining a research-first approach to decision-making.
+              or hedge funds. I aim to specialize at the intersection of finance and innovation, while maintaining
+              a research-first approach to decision-making.
             </p>
           </div>
           <div class="callout-meta">
@@ -96,7 +189,7 @@
               </div>
               <div class="contact-item">
                 <span class="meta-label">LinkedIn</span>
-                <a href="https://www.linkedin.com/in/thomas-amara/">linkedin.com/in/thomas-amara</a>
+                <a href="https://www.linkedin.com/in/thomas-amara/" target="_blank" rel="noopener">linkedin.com/in/thomas-amara</a>
               </div>
             </div>
             <a class="button" href="Thomas_Amara_CV.pdf" download>Download CV</a>
@@ -104,5 +197,23 @@
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-brand">Thomas Amara</div>
+          <div class="footer-tagline">Finance · Research · Ideas</div>
+        </div>
+        <nav class="footer-links" aria-label="Footer">
+          <a href="projects.html">Projects</a>
+          <a href="research.html">Research</a>
+          <a href="interests.html">Interests</a>
+          <a href="mailto:ta2u24@soton.ac.uk">Email</a>
+          <a href="https://www.linkedin.com/in/thomas-amara/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.basisfinance.app/" target="_blank" rel="noopener">Basis</a>
+        </nav>
+      </div>
+      <div class="footer-copy">© 2026 Thomas Amara. Built and maintained by me.</div>
+    </footer>
   </body>
 </html>
