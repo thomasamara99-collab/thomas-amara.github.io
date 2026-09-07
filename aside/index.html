@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Aside — Say No. Watch It Count. — Thomas Amara</title>
+    <title>Aside — Say No. Watch It Count.</title>
     <meta
       name="description"
       content="Aside is a sinking-funds savings app: log the purchases you resist and watch that money push a goal you actually care about forward. No shame, no streaks, no leaderboards."
@@ -13,34 +13,30 @@
     <link rel="canonical" href="https://thomas-amara.com/aside/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Thomas Amara" />
+    <meta property="og:site_name" content="Aside" />
     <meta property="og:title" content="Aside — Say No. Watch It Count." />
     <meta
       property="og:description"
       content="Log the purchases you resist and watch that money push a goal you actually care about forward. No shame, no streaks, no leaderboards."
     />
     <meta property="og:url" content="https://thomas-amara.com/aside/" />
-    <meta property="og:image" content="https://thomas-amara.com/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://thomas-amara.com/aside/images/icon.png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
 
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Aside — Say No. Watch It Count." />
     <meta name="twitter:description" content="A savings app that celebrates the purchases you resist, not the ones you make." />
-    <meta name="twitter:image" content="https://thomas-amara.com/og-image.png" />
+    <meta name="twitter:image" content="https://thomas-amara.com/aside/images/icon.png" />
 
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#0b0b0b" />
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="images/icon.png" />
+    <meta name="theme-color" content="#12805e" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
-    <script src="../scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="aside.css" />
 
     <script type="application/ld+json">
       {
@@ -57,79 +53,81 @@
   </head>
 
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="background-glow" aria-hidden="true"></div>
-
-    <header class="hero" id="home">
-      <nav class="top-nav" data-reveal>
-        <a class="brand" href="../index.html">Thomas Amara</a>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../projects.html">Projects</a></li>
-          <li><a href="../research.html">Research</a></li>
-          <li><a href="../interests.html">Interests</a></li>
+    <div class="wrap">
+      <nav class="a-nav">
+        <a class="a-brand" href="index.html">
+          <img src="images/icon.png" alt="Aside" />
+          <span>Aside</span>
+        </a>
+        <ul class="a-nav-links">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
         </ul>
       </nav>
+    </div>
 
-      <section class="hero-content">
-        <p class="eyebrow" data-reveal>Aside · A Sinking-Funds Savings App</p>
-        <h1 data-reveal data-reveal-delay="90">Say no.<br />Watch it count.</h1>
-        <p class="lead" data-reveal data-reveal-delay="160">
-          Most savings apps make you feel guilty. Aside does the opposite — log the purchases you
-          resist, and watch that money push a goal you actually care about forward. No shame, no
-          streaks to break, no leaderboards. Just proof you're getting better at the one skill
-          that actually moves the needle.
-        </p>
-        <div class="cta-row" data-reveal data-reveal-delay="220">
-          <a class="button button-primary" href="https://aside.thomas-amara.com/" target="_blank" rel="noopener">
-            Try the interactive demo →
-          </a>
-          <span class="button button-disabled" aria-disabled="true">Coming soon on the App Store</span>
+    <header class="a-hero">
+      <div class="wrap a-hero-inner">
+        <div>
+          <p class="a-eyebrow">A sinking-funds savings app</p>
+          <h1 class="a-h1">Say no.<br />Watch it count.</h1>
+          <p class="a-lead">
+            Most savings apps make you feel guilty. Aside does the opposite — log the purchases
+            you resist, and watch that money push a goal you actually care about forward. No
+            shame, no streaks to break, no leaderboards. Just proof you're getting better at the
+            one skill that actually moves the needle.
+          </p>
+          <div class="a-cta-row">
+            <a class="a-btn a-btn-primary" href="https://aside.thomas-amara.com/" target="_blank" rel="noopener">
+              Try the interactive demo →
+            </a>
+            <span class="a-btn a-btn-disabled" aria-disabled="true">Coming soon on the App Store</span>
+          </div>
         </div>
-      </section>
+        <img class="a-hero-mark" src="images/pip.png" alt="Pip, Aside's mascot" />
+      </div>
     </header>
 
-    <main class="content" id="main">
-      <section class="section-block" data-reveal>
-        <div class="section-header">
-          <h2>Why Aside</h2>
+    <main class="wrap">
+      <section class="a-section">
+        <div class="a-section-header">
+          <h2 class="a-h2">Why Aside</h2>
           <p>Five things that make the resist-log loop actually stick.</p>
         </div>
-        <div class="section-grid">
-          <div class="card spotlight" data-reveal>
-            <h2>Say no, watch it count</h2>
+        <div class="a-grid">
+          <div class="a-card a-card-brand">
+            <h3>Say no, watch it count</h3>
             <p>
-              Tempted by something you don't need? Log it in seconds. Pip, Aside's resident
-              squirrel, cheers every single time — and the money you resisted spending moves
-              straight toward a goal you actually chose.
+              Tempted by something you don't need? Log it in seconds. Pip cheers every single
+              time — and the money you resisted spending moves straight toward a goal you
+              actually chose.
             </p>
           </div>
-          <div class="card spotlight" data-reveal data-reveal-delay="60">
-            <h2>Make more, it counts too</h2>
+          <div class="a-card">
+            <h3>Make more, it counts too</h3>
             <p>
               Closing the gap on a goal isn't only about spending less — it's about making more.
               Log extra income toward a goal exactly like you log a resisted purchase. Both are
               progress. Both get celebrated.
             </p>
           </div>
-          <div class="card spotlight" data-reveal data-reveal-delay="120">
-            <h2>See yourself get better</h2>
+          <div class="a-card">
+            <h3>See yourself get better</h3>
             <p>
               A weekly completion ring you close, never a streak you fear breaking. A real trend
-              of your resisted spending over time, compared only to your own last 30 days — never
-              to anyone else.
+              of your resisted spending over time, compared only to your own last 30 days.
             </p>
           </div>
-          <div class="card spotlight" data-reveal data-reveal-delay="180">
-            <h2>Build goals that feel real</h2>
+          <div class="a-card">
+            <h3>Build goals that feel real</h3>
             <p>
               Create funds for a trip, an emergency cushion, a big purchase — anything. Set a
-              target date and get a calm, once-and-done "suggested weekly amount," never a
-              nagging notification.
+              target date and get a calm, once-and-done "suggested weekly amount."
             </p>
           </div>
-          <div class="card spotlight" data-reveal data-reveal-delay="240">
-            <h2>Meet Pip, your cheerleader</h2>
+          <div class="a-card a-card-brand">
+            <h3>Meet Pip, your cheerleader</h3>
             <p>
               A warm companion that celebrates restraint and cheers milestones — never once makes
               you feel bad about a "yes." The anti-guilt-trip mascot for the anti-guilt-trip app.
@@ -138,55 +136,36 @@
         </div>
       </section>
 
-      <section class="section-block" data-reveal>
-        <div class="callout">
+      <section class="a-section">
+        <div class="a-callout">
           <div>
-            <h2>Built to be honest, not gamified</h2>
+            <h2 class="a-h2">Built to be honest, not gamified</h2>
             <p>
-              Aside never links to your bank — everything is entered by you, on your terms. No
-              scraping, no sharing, no surprises. Free covers your first 5 funds and the full
-              resist-log loop; Premium adds unlimited funds, full resisted-purchase history and
-              insights, gentle reminders, and CSV export.
+              Aside never links to your bank — everything is entered by you, on your terms. Free
+              covers your first 5 funds and the full resist-log loop; Premium adds unlimited
+              funds, full resisted-purchase history and insights, gentle reminders, and CSV
+              export.
             </p>
           </div>
-          <div class="callout-meta">
-            <div class="contact-list">
-              <div class="contact-item">
-                <span class="meta-label">Privacy</span>
-                <a href="privacy.html">Read the privacy policy</a>
-              </div>
-              <div class="contact-item">
-                <span class="meta-label">Terms</span>
-                <a href="terms.html">Read the terms of service</a>
-              </div>
-              <div class="contact-item">
-                <span class="meta-label">Support</span>
-                <a href="support.html">Get help</a>
-              </div>
-            </div>
-            <a class="button button-primary" href="https://aside.thomas-amara.com/" target="_blank" rel="noopener">
-              Try the demo →
-            </a>
+          <div class="a-callout-links">
+            <a href="privacy.html">Privacy policy →</a>
+            <a href="terms.html">Terms of service →</a>
+            <a href="support.html">Get support →</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <div>
-          <div class="footer-brand">Aside</div>
-          <div class="footer-tagline">A sinking-funds savings app by Thomas Amara</div>
-        </div>
-        <nav class="footer-links" aria-label="Footer">
-          <a href="../index.html">Thomas Amara</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="support.html">Support</a>
-          <a href="https://aside.thomas-amara.com/" target="_blank" rel="noopener">Try the demo</a>
-        </nav>
+    <footer class="a-footer">
+      <div class="wrap a-footer-inner">
+        <ul class="a-footer-links">
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="https://aside.thomas-amara.com/" target="_blank" rel="noopener">Try the demo</a></li>
+        </ul>
+        <p class="a-footer-credit">Built by <a href="https://thomas-amara.com">Thomas Amara</a></p>
       </div>
-      <div class="footer-copy">© 2026 Thomas Amara. Built and maintained by me.</div>
     </footer>
   </body>
 </html>
